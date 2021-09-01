@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box</title>
+  <link rel = "stylesheet" href = "style.css">
+  
+    <style>
+.container { height:20vh;
+              width:200vh;
+              display: flex;
+              
+              justify-content:space-around;
+              flex-wrap:wrap-reverse;
+              align-content:space-between;
+            }
+            .container>div {
+                text-align: center;
+                font-size: 20px;
+            }
+            .home {
+               
+                margin:10px;
+                width:200px;
+                height:80px;
+                padding:10px;
+            }
+            .about {
+                
+                margin:10px;
+                width:200px;
+                height:80px;
+                padding:10px;
+            }
+            .services {
+                
+                margin:10px;
+                width:200px;
+                height:80px;
+              padding:10px;
+            }
+      .info {
+            
+                margin:10px;
+                width:200px;
+                height:80px;
+              padding:10px;
+            }
+      
+     
+</style>
+</head>
+<body>
+  <p class="famous"><b>Famous Operating</p>
+  <p class="system">Systems</b></p>
+  <nav class="container">
+    <div class="home"><img src="http://46c4ts1tskv22sdav81j9c69-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2012/02/6874.5_5F00_01C91EBC.png" alt="windows logo"></div>
+    <div class="about"><img src="https://e7.pngegg.com/pngimages/662/77/png-clipart-macintosh-mac-os-x-lion-macos-macbook-operating-system-apple-logo-heart-logo.png" alt="apple logo"></div>
+    <div class="services"><img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="ubuntu logo"></div>
+    <div class="info"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABCFBMVEX///8Boe7+/v4AAAAAnO0An+4Am+0ApPMAou8ApfUAme0Ao+4GAAD5+fnT09OgoKDu+f73/f8PAADu7u5eXl7m5ubd3d1qamoQEBBLtfGysrKqqqrLy8sqKiq4uLiQkJBISEgjIyO13/nB5Prk9P1ov/PW7vyZ0/eZmZlUVFQ6OjqAgIAXFxej2Ph3xfR2dnaJiYlQUFDH6fuLzfae1fcmqvAATnQfgrcXmd4qX35AQEAXAADBwcEcP1IbR18xMTFWuvI7sPAqcJgcjcoRLz4YFAkefbAkVnATJi4dKComaIsEkNUMIiwHRWYgHBoGO1YhRFcNMkYkMjUgFQAimNUSGh8MgLwqeKPTmMFQAAAPeElEQVR4nO2d+VvbOBPHldiObUxC7gPCEQiBkoQAaUqgXGlaaOlul92F5f//T15JPmKH+NDIduj7+PtDn9JSNx9GmhmNxhJCiRIlSpQoUaJEiRIlSpQoUaJEiRL9XynfOdvF6vf7+Ne9s3Z+2R8oLBXynf5wf6KtZDIZcSb81Yo2OT7YbRfSy/6IHMqfHexPUhhMklKLJEkYVZns9zu/pUHPhhMNsy1EmwMVRa1x0Fn2B2ZSvn8nBaOzUSr7u4Vlf/BgavcbGSY6izIj/QaQ6b27FAjPhNSO3/VwzQ9HHHgGpDjpL5vDTZ39jMiJZzCKw/ayYRborMFtvplE6fi9MXbuQuQjkt4XYztM+9kY34tjzR9nwucjEqWP7yKl+6iF4l8WM472lo2HOpPo+FLEr+4veagOI5iAc4yp3SXydUaRGtBQ5m5pS48Dl1VR2JK05czGQiMOA+oSj5cAeJaKx4AG4iT2kfoxTr4UGaln8QLuZ+IFxBLjXHLEOQVnygxjA2yPYh6iJuJdTNG/oywHEA/URiyIywMkLjUGxDMOPkVWdcmyAnuCNIo8asABZVUbn3+5+IR18WU6VuX3idiBAsrq9OLrZ8HSt5t7DcQojSIdqG3g4FLU6fWqMKeXcxXyOCnKudgGOhlZe5jHo3oAmVFsRLbyLwDjoDz+vhBQEK41iBXF/agIGzBAxRUQI4LmYlTZzT4wVdO+ugLigaqCECPJUT8Ck231iwegsHoO86gR7G6cAS2ojItehMJ30FSMICwWgHEipT56AgrCK2icSo2wCYFeBs/CFx/CH7CfXdje5gC6IJSnbyL9vGAzMSWGOhXByVpK9hukUHcacvoGX/KqN76ERQ326DALcEN40UJzj/amgAEDT8XQilMdOKAy/uZLKHwBEqa0sBLUCXzRq/xcEA0HV7mNU9vX17CJiMdpSP70I0dhTflJEG63cht1k6eXo09dnxH+AZyIYaU2efD/nyLBAhN8yOLHlHoGTxWlidDWzNX8hKYT4cT9Y57aKCGslwgTauo4Gzog/oOa5Wqm0ImYyoSw9dbmqm7LeJQeksdgog8UB//W+DpnGfEeTJjS+AnB6RqV8nNVKKHSWhNzbRCYLv5NqVu+IogW4SOcUDzgBYQuKUxCvLJA2SNBWEeoSmDWEMre6oMVHZmEwKyGSuPNbPhMSAh30BWhKKGKPg3RIaXCY3XHJPyTg5DXiJwmxIS9U7StG48SbiNUplRNNBulf8FHKTYi30qR04SkhPELrelo1LOUkeFDr3RiPeTzBCQ+I3a4twnVvwQdbS23aUSLQyMsHoZDmBrx5G773JsweG2xReNE2cTZpFHjFmV/WYRfuQh5YmJ+hRcwpV4QmBpNaOon27cGU68yC/iC8A8XYWoEJ+RYNZkiK+CuPve6JHmrnrSoIbftqfcPPkL4Kio94gZMyaSWWN7RnSfJ1VB2qyzMqQWqt1mSwDXwvRB26+V7HeKyZOWjOAs/cRJ+G3MRphRowLgLYbPXIOwiE1CHLH2wE37mJIS2abT5+UzCdQcgZXQYkZNQmsAI+2G0lMjn1ILpecCqgxBaqTElwjqmufMZSvgfBthxmhAP0q5zIoIrNSYhKK/Jh9L2pI9S+zTE3pRmMx8uZ4Q3HKk3FWiYhjJIU/LrnKdBaJ2kbztNlLW5Gr6AiEMiZJiG4Unp3lqdxIZyFhkTkJiudUWW+mshTkSANy2E0xeEszahUsUpaKtKnloaEB68DCZrfLRpEYILioYgJSnelaFJeEOWEVmStQ2aTcpXK6E35TZw3dtCZF/qD8OxofZV6JF8dMssJh41Z1MybdUx8PKCM+iz56YchW6byObaEc1Hs2ukJtxyxH6bEYVHvnHKXv7mqgNbUsj+6KHhY1B1i5S7HYFxM6xxyj4Rw5mGKukUqtpy7vncZmNmxCJf6sZcrgFv+joASTC8ncdyS0/5ahnMW8L89QsyCcnG05UHYdpWrOGciqwRsRDC4lehu6OXb4amg7BkIyzyTEWJcUc4H4IJ9Q3uphcgRhzYEHscIYPV1fCXEY1eqIE3oH1/RuDLwBnL+/xpN905FISsD2Ea2UtSwPYhKsbkm7vKpoxpp9CGH6Aj6pOKDXwrkS2r4XalMp2ELU83oxNm7YTCE5iQ0Zny5mxGQ6K/CTGis/D2Jaa2BT6+lKw3JPZ8ZyEhrDgIi9Bxylg15SznK9f0076pQC1GdFQWgW3DrOGCs0aj6qULIReM8MpBCPanTNsXfOHQbIS6DASIfQ1dYVgNN9AKOFPTwhkXoWq8e7BGSxUe7jSr/63ua24tIz7AxmmGhXCXr4fG6PQq4SeVmhtXFTfjlZrrTbohRSOLteAH9tessCQ1XISq7maEGqocbl6ul9yNiFD2qlxuIkRLpzOH8wPWwM+yQuQhNNI1vLbfEW6byDvm479utuo52uRm2zJ9hRiRKW3jSUvla+uDrvmnNASyK9Ai/9FsX/EFssiIi9DW2J0LAkgQ9WVwy2ZESGaTYVnl8xCabc/1SrBgQRD1xG17RggxYkyE8rPZMlsNCkgQaagYtLiMyEQI9zSkim8Fw+CItDVzYFsq/mD3NUzzEE6oGe+J1oMk3XNGrNlbGNhrNvEQmo0JbCY0am6X9prNE/MwZYqH4C4M9cn4gEwmNMo1LftKcZU5O11h6f6C5qXK2AgVNTZAnMARL7NmJ2QepiIDILj1mfYlEHmWgRcikjloq/ELwgXrMGVaW0Ab2sxVBesgxYTb84R/s9qQbS8faEPzhdgyK6C+5e0g/M64jcFYEoZtkihjI1ZssxNuzBOyLoQZy/qwXhr4NKRl0/oaDyFjT80xiNB6qZkhY7MR3jrqiqz7iSJbIy1s+1D9ZHy6wEn3jBCP0A8DHhsypaXQpIaHEI/QgaPx9AerDdk2gWEBUbmBE+Jo0b20E7I2fzO+NFsAOVNrbQiYhwNnSoPjIVvEl+6YAIEbF9YoDVYKdhCWhfohFyHrW8GgzSfrdIFD5pQmeyTsOLdoGF+GYnSlsFW+/Py38eku02yrQ0S2Z7ZvHYSM9TaJtTsR8HazPLYK80xJDSptdLu1uYyGuSzM/HY+oCfKcUqLT4OCHTCt/2DKAych2+qJ2dEA8jY6CQel3A6jszG3npwmFIQXpngofmQmZM1qZLLhdEr+5YDNikYjba02RyhcsBgRcEoG40SUtWuDynzBkLxMGYiQ/ETKudw8IFtiqjADIsTyeFl9/kcgJqQfOWvUPbuBEOkPJIu2nXibbN4U9GJQ0OUFOUvv/onWZ8xX7c2d+aMg2Rt9WdYyvKEa6gnCp+ARkTkaEu0GSk1lbXpxbZS5rRAx65G5CtBuQvYNS3OEFVJeZIj5jGm3rkCt7PLrd3Mjpm6bd7Pmg0NfRFoMrjr628hbROssJVNArCAKkLjJZg3/dM2x0WR76Wfgh2gQNm2AJyhNCFuBCYGvdu35DlO9PFrvNt9s19tMcuqDSDuhm2j29kUtZ564ENyZwl7P819B0bpMvYLeMtj7Rn2qw5TwClutul37UOuuV/Q3MUkzWNCSKXCQBvCmlPB0IYD9dJYt743uTeNbzP/W+OMyaakNhgjypES+518p2qpbHzeydTrteLcJ31LX8uaPyTAtvipBYiL85AjfZbBM4vzi+rbN2fRKHoT6eF5gZn3v++tU9mXkOGrId5FIfalLyWLWc3jkUeNHJboqXJDE4oBBFh2rN76tfCscN9L42pA0sLmsIhAyl4snHoDG8R8Lkx+UppPZ7y1hroOG/FqFqatxWyeZIW7bq2XImK2LvwWhKnldyufFNq5Dzfxa9umWr2thjY7TXxUPwKyRq7VcH0GXHJ7DFPqasyGfgEHOE6i7A6R3aDh0/fgVs0DqGjJpEl/3tCHnUVFtb0Kyqe0R0HU/6bKIQrYedpfaHEK5nl/g5zShjxEVregdz/WQseDz4ydXbIv6hc/As5B+i/cGBjjaBzIinYZewc4oUcwB4Mdmm46ixQJXilBTn6Q976Ibrwm9j2sj7/30fHoPqbOsOh5ZXa+1BIfe/JTw+DQqWg/e4TDDf8lOwePx7knb7KPqqU15e20Da+3wpDwHRzS//MBDWI8iq9fP3ue2h3LonntiozcDk6WF11Q8eks0r7mXo1BWL9oUb6Z+9wuEcnBi2vV4VmN5WFvPlYxvXUT4pkr4Vo4KOUJXtLO9eOF/f0JIh7S6N0hZbXpCq3y4VV1I6SxP+BOShlqim3GAewU4TzKz5F7OUF8dJz0fnZDV/hzh6UIoh2xvnhiu6fs0yL0JYZwLSeXhbOTx/Y3DdRxtODvXHS+JumnWfoPSJESsPga6NCHEM709CouKrI5/vn66/tf6uPWBrX3dHHOWip+/bW62Wv86j6Y1o4Wex/UCXnwBPJVmoTxPAVFkIm16//BiVBZ7hyXzX+pecbUovDw93p8/a7Ip7fn8/vHppWgMU6T7GPLFU8BbL0K9PiDIXpssq+rz/Y1xOsTOYa6UzZaoI129+G+qketzZMVmG/KDUeWpflb0BvlfKl06QgPesgMuPy1WwIZTMmbvb8wRuGmEwgvVvRKhnut23+l2qYsp3gctkoblR00FPmsXm2b86Dji2vtQj1nEIfoWeOd3JfQ7ERmaMxRyMdAfhiWLFz6jTn6wXtBYDToFwzvo2ia2bW9Z1aavFzd/PryOfUedev+V/jSKN8EvDwp5EupiPQtEphd0BXEbsjI+f32djv3rhhZgNPda9aO785AGHIYt2SguYSEaxn+t42KJkd28Cr0tKGRFc1MQ1XLurpxXpHdZFsI5PYoPMNqbc6EXk4Wn6K4kM5RfMmLkgMtGzEQPSObi8txNxHPQVHppHjWCZNRFx8sJ/XHe6ryM7EaSYr1DfleK299Io4hyUTd1Ynap4l3s18cXGnGO1JX4bh23aSjGZUZJi3UKztQZxRM2MvGPUFOFOMKGFGeQeKuzyM2YaYRY2QZpGGncELWwNl841InOqUri8dJmoEN7EQ3VTCPmIO+hAy10RkkcLSlELFYhZEYpM3kHE9Cp/MEotPn4HvmI0rujTBh+VVpphHaFaug629c4UzlJ1IbLDoDeyvcnEhhSElN3u2HeYxyR2geTDABSEsVG/32EvwBq9xv4AwenxN+c2t/9bfB0FfaGDQ1T+mFKeFCP7g7eT2xnUr7TP26MMpmFoBhNzIijxvFu5zeYel4qtM/6w/3GSMusZEytiNqkcXyw28n/5nBzKuTb7U6n027nw7pPO1GiRIkSJUqUKFGiRIkSJUqUKFGi96P/AWYJiT91WtuGAAAAAElFTkSuQmCC" alt="linux logo"></div>
+    <!--<div class="like">5</div>
+    <div class="sport">6</div>
+    <div class="nature">7</div>-->
+  </nav>   
+</body>
+</html>
